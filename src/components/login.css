@@ -1,5 +1,16 @@
 .min-h-screen {
-    background-color:rgb(88, 84, 149);
+    background-image: url('https://newmibridges.michigan.gov/resource/1699095958000/ISD_Icons/landing-page/group-3.svg');
+    background-repeat: no-repeat;
+    background-size: cover; /* This will make the background image cover the entire container */
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Vertically center the content */
     color: black;
+  };
+
+  #loginbtn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
   }
-  

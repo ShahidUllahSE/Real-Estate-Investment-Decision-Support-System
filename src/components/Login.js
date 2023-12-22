@@ -40,12 +40,12 @@ const Login = () => {
         <div className='container max-w-screen-lg mx-auto h-auto md:h-screen'>
           <div>
             <h2 className='font-semibold text-xl text-gray-600'>Login Form</h2>
-            <div className='bg-white rounded shadow-lg p-4 px-4 md:p-8'>
+            <div className='bg-blue-200 rounded shadow-lg p-4 px-4 md:p-8'>
               <div className='grid gap-4 gap-y-2 text-sm grid-cols-1 md:grid-cols-5'>
                 <div className='md:col-span-1'></div>
                 <form onSubmit={formik.handleSubmit} className='md:col-span-3'>
                   <div className='grid gap-4 gap-y-2 text-sm grid-cols-1 md:grid-cols-5'>
-                    <div className='md:col-span-5' id='username'>
+                    <div className='md:col-span-5 ' id='username'>
                       <label htmlFor='username'>Username</label>
                       <input
                         type='text'
@@ -75,9 +75,12 @@ const Login = () => {
                     </div>
                     <div className='md:col-span-5'></div>
                     <div className='md:col-span-5 text-right'>
-                      <div className='inline-flex items-start'>
+                      <div className='flex ' id='loginbtn'>
                         <button className='bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded' type='submit'>
-                          Submit
+                          Login
+                        </button>
+                        <button className='bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded ml-3' type='submit'>
+                          Register
                         </button>
                       </div>
                     </div>
